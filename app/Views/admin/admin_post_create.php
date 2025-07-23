@@ -39,7 +39,7 @@
 
     <div class="p-5 mb-4 bg-light rounded-3">
         <div class="container py-5">
-            <h1 class="display-5 fw-bold">Blog > Admin</h1>
+            <h1 class="display-5 fw-bold">post >New </h1>
         </div>
     </div>
 
