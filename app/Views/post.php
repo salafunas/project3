@@ -58,17 +58,10 @@
     </div>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="social-links">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-      </div>
-      <p>&copy; <?= date('Y') ?> N4S. All rights reserved.</p>
-    </div>
-  </footer>
+  <a href="https://www.linkedin.com/in/salafunas-saleh-103906375/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+  <a href="https://x.com/Salafunas_" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+  <a href="https://instagram.com/salafunas_" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+  <a href="https://github.com/salafunas" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
 
   <script src="<?= base_url('js1/blog-detail.js') ?>"></script>
 </body>
