@@ -1,87 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MyBlog</title>
-
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="<?= base_url('css/bootstrap.min.css') ?>" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N4S - About</title>
+    <link rel="stylesheet" href="<?= base_url('css1/style.css') ?>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
+    <nav class="navbar">
+        <div class="container">
+           <a class="navbar-brand" href="<?= base_url() ?>">N4S</a>
+            <button class="navbar-toggler">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="<?= base_url() ?>"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="<?= base_url('about') ?>" class="active"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="<?= base_url('post') ?>"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="<?= base_url('kontak') ?>"><i class="fas fa-envelope"></i> Kontak</a></li>
+                <li><a href="<?= base_url('faqs') ?>"><i class="fas fa-question-circle"></i> FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
 
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-		<div class="container">
-			<a class="navbar-brand" href="<?= base_url() ?>">MyBlog</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="<?= base_url() ?>">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="<?= base_url('about') ?>">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="<?= base_url('post') ?>">Blog</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="<?= base_url('contact') ?>">Contact</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="<?= base_url('faqs') ?>">FAQ</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+    <header class="hero-section">
+        <div class="container">
+            <h1>Tentang Kami</h1>
+            <p>Mengenal lebih dekat dengan tim N4S</p>
+        </div>
+    </header>
 
-	<div class="p-5 mb-4 bg-light rounded-3">
-      <div class="container py-5">
-        <h1 class="display-5 fw-bold">About</h1>
-        
-      </div>
-    </div>
+    <main class="container">
+        <div class="card-grid">
+            <article class="card">
+                <div class="card-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>Siapa Aku</h3>
+                <p>Kami adalah tim pengembang yang berdedikasi untuk membuat konten pembelajaran pemrograman berkualitas tinggi dengan pendekatan praktis.</p>
+            </article>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 my-2 card">
-				<div class="card-body">
-					<h5 class="h5">Siapa Aku</h5>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perferendis commodi tenetur quos ducimus repellat nulla, nam magni. Commodi iusto ad harum voluptas exercitationem facere eos earum laboriosam excepturi quas?</p>
-				</div>
-			</div>
-			<div class="col-md-12 my-2 card">
-				<div class="card-body">
-					<h5 class="h5">Bisa Apa Aku</h5>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perferendis commodi tenetur quos ducimus repellat nulla, nam magni. Commodi iusto ad harum voluptas exercitationem facere eos earum laboriosam excepturi quas?</p>
-				</div>
-			</div>
-			<div class="col-md-12 my-2 card">
-				<div class="card-body">
-					<h5 class="h5">Bagaimana Aku</h5>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perferendis commodi tenetur quos ducimus repellat nulla, nam magni. Commodi iusto ad harum voluptas exercitationem facere eos earum laboriosam excepturi quas?</p>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-	<div class="container py-4">
-		<footer class="pt-3 mt-4 text-muted border-top">
-			<div class="container">
-				&copy; <?= Date('Y') ?>
-			</div>
-		</footer>
-	</div>
+            <article class="card">
+                <div class="card-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Bisa Apa Aku</h3>
+                <p>Kami menguasai berbagai teknologi web modern termasuk PHP, JavaScript, CSS, dan berbagai framework terkini untuk pengembangan aplikasi web.</p>
+            </article>
 
-	<!-- Jquery dan Bootsrap JS -->
-	<script src="<?= base_url('js/jquery.min.js') ?>"></script>
-	<script src="<?= base_url('js/bootstrap.min.js') ?>"></script>
+            <article class="card">
+                <div class="card-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Bagaimana Aku</h3>
+                <p>Dengan pendekatan belajar berbasis proyek, kami membantu developer pemula untuk memahami konsep fundamental sambil membangun aplikasi nyata.</p>
+            </article>
+        </div>
+    </main>
 
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy; <?= date('Y') ?> N4S. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="<?= base_url('js1/blog-detail.js') ?>"></script>
 </body>
-
 </html>

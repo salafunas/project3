@@ -66,7 +66,7 @@ return [
     'permissionNotFound' => 'Unable to locate permission: {0}',
 
     // Banned
-    'userIsBanned' => 'User has been banned. Contact the administrator',
+    'userIsBanned' => 'User has been banned. Kontak the administrator',
 
     // Too many requests
     'tooManyRequests' => 'Too many requests. Please wait {0, number} seconds.',

@@ -9,13 +9,13 @@ public function about()
 echo view("about");
 }
 
- public function contact()
+ public function Kontak()
 {
-echo view("contact");
+echo view("kontak");
 }
 
- public function faqs()
+ public function FAQs()
 {
-echo view("Faqs");
+echo view("FAQs");
 }
 }
