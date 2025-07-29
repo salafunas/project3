@@ -6,6 +6,11 @@
     <title>N4S - FAQ</title>
     <link rel="stylesheet" href="<?= base_url('css1/style.css') ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+    .hero-bg {
+      background-image: url('<?= base_url('images/bg-faq.png') ?>');
+    }
+  </style>
 </head>
 <body>
     <nav class="navbar">
@@ -24,12 +29,14 @@
         </div>
     </nav>
 
-    <header class="hero-section">
-        <div class="container">
-            <h1>Pertanyaan Umum</h1>
-            <p>Temukan jawaban untuk pertanyaan yang sering diajukan</p>
-        </div>
-    </header>
+<header class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Pertanyaan Umum</h1>
+      <p>Temukan jawaban untuk pertanyaan yang sering diajukan</p>
+    </div>
+  </header>
 
     <main class="container">
         <div class="card-grid">

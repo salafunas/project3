@@ -6,6 +6,11 @@
     <title>N4S - Kontak</title>
     <link rel="stylesheet" href="<?= base_url('css1/style.css') ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+    .hero-bg {
+      background-image: url('<?= base_url('images/bg-kontak.png') ?>');
+    }
+  </style>
 </head>
 <body>
     <nav class="navbar">
@@ -24,12 +29,14 @@
         </div>
     </nav>
 
-    <header class="hero-section">
-        <div class="container">
-            <h1>Hubungi Kami</h1>
-            <p>Kami selalu senang mendengar dari Anda</p>
-        </div>
-    </header>
+  <header class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Hubungi Saya Bila Perlu</h1>
+      <p>Saya selalu senang mendengar dari Anda</p>
+    </div>
+  </header>
 
     <main class="container">
         <div class="card-grid">
@@ -46,7 +53,7 @@
                     <i class="fas fa-envelope"></i>
                 </div>
                 <h3>Email</h3>
-                <p>info@n4s.dev</p>
+                <p>salafunassaleh123@gmail.com</p>
             </article>
 
             <article class="card">
@@ -54,7 +61,7 @@
                     <i class="fas fa-phone"></i>
                 </div>
                 <h3>Telepon</h3>
-                <p>+62 123 4567 890</p>
+                <p>+62 577 0901 957</p>
             </article>
         </div>
 

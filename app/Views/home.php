@@ -6,6 +6,12 @@
     <title>N4S - Home</title>
     <link rel="stylesheet" href="<?= base_url('css1/style.css') ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+    /* Style inline untuk memastikan gambar muncul */
+    .hero-bg {
+      background-image: url('<?= base_url('images/bg-home.jpg') ?>');
+    }
+  </style>
 </head>
 <body>
     <nav class="navbar">
@@ -23,14 +29,17 @@
             </ul>
         </div>
     </nav>
-
-    <header class="hero-section">
-        <div class="container">
-            <h1>Selamat Datang</h1>
-            <p>Portal Belajar Pemrograman Modern</p>
-        </div>
-    </header>
-
+<header class="hero-section">
+    <!-- Div untuk background image -->
+    <div class="hero-bg"></div>
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
+    <!-- Konten -->
+    <div class="hero-content">
+      <h1>Selamat Datang</h1>
+      <p>Portal Belajar Pemrograman Modern</p>
+    </div>
+  </header>
     <main class="container">
         <div class="card-grid">
             <article class="card">

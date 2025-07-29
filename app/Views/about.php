@@ -6,6 +6,11 @@
     <title>N4S - About</title>
     <link rel="stylesheet" href="<?= base_url('css1/style.css') ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <style>
+    .hero-bg {
+      background-image: url('<?= base_url('images/bg-about.jpg') ?>');
+    }
+  </style>
 </head>
 <body>
     <nav class="navbar">
@@ -24,12 +29,14 @@
         </div>
     </nav>
 
-    <header class="hero-section">
-        <div class="container">
-            <h1>Tentang Kami</h1>
-            <p>Mengenal lebih dekat dengan tim N4S</p>
-        </div>
-    </header>
+   <header class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Tentang Saya</h1>
+      <p>Mengenal lebih dekat dengan tim kami</p>
+    </div>
+  </header>
 
     <main class="container">
         <div class="card-grid">
@@ -38,7 +45,7 @@
                     <i class="fas fa-user"></i>
                 </div>
                 <h3>Siapa Aku</h3>
-                <p>Kami adalah tim pengembang yang berdedikasi untuk membuat konten pembelajaran pemrograman berkualitas tinggi dengan pendekatan praktis.</p>
+                <p>Saya Salafunas Saleh, mahasiswa Sistem Informasi UNUSIA Jakarta Pusat. Saya suka ngoding dan bermain game, tertarik pada dunia teknologi dan pengembangan sistem.</p>
             </article>
 
             <article class="card">
@@ -46,7 +53,7 @@
                     <i class="fas fa-cogs"></i>
                 </div>
                 <h3>Bisa Apa Aku</h3>
-                <p>Kami menguasai berbagai teknologi web modern termasuk PHP, JavaScript, CSS, dan berbagai framework terkini untuk pengembangan aplikasi web.</p>
+                <p>Saya menguasai berbagai teknologi web modern termasuk PHP, JavaScript, CSS, dan berbagai framework terkini untuk pengembangan aplikasi web.</p>
             </article>
 
             <article class="card">
