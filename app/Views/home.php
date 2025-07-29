@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,13 @@
     <link rel="stylesheet" href="<?= base_url('css1/style.css') ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-    /* Style inline untuk memastikan gambar muncul */
-    .hero-bg {
-      background-image: url('<?= base_url('images/bg-home.jpg') ?>');
-    }
-  </style>
+        /* Style inline untuk memastikan gambar muncul */
+        .hero-bg {
+            background-image: url('<?= base_url('images/bg-home.jpg') ?>');
+        }
+    </style>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="container">
@@ -29,17 +31,17 @@
             </ul>
         </div>
     </nav>
-<header class="hero-section">
-    <!-- Div untuk background image -->
-    <div class="hero-bg"></div>
-    <!-- Overlay -->
-    <div class="hero-overlay"></div>
-    <!-- Konten -->
-    <div class="hero-content">
-      <h1>Selamat Datang</h1>
-      <p>Portal Belajar Pemrograman Modern</p>
-    </div>
-  </header>
+    <header class="hero-section">
+        <!-- Div untuk background image -->
+        <div class="hero-bg"></div>
+        <!-- Overlay -->
+        <div class="hero-overlay"></div>
+        <!-- Konten -->
+        <div class="hero-content">
+            <h1>Selamat Datang</h1>
+            <p>Portal Belajar Pemrograman Modern</p>
+        </div>
+    </header>
     <main class="container">
         <div class="card-grid">
             <article class="card">
@@ -71,19 +73,20 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-            </div>
-            <p>&copy; <?= date('Y') ?> N4S. All rights reserved.</p>
-            <p class="small">Dibuat dengan <i class="fas fa-heart"></i> untuk developer Indonesia</p>
+ <footer class="footer">
+    <div class="container">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/salafunas-saleh-103906375/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/Salafunas_" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/salafunas_" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/salafunas" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
         </div>
-    </footer>
+        <p>&copy; <?= date('Y') ?> N4S. All rights reserved.</p>
+        <p class="small">Dibuat dengan <i class="fas fa-heart"></i> untuk developer Indonesia</p>
+    </div>
+</footer>
 
     <script src="<?= base_url('js/script.js') ?>"></script>
 </body>
+
 </html>

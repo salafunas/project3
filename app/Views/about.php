@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>N4S - About</title>
     <link rel="stylesheet" href="<?= base_url('css1/style.css') ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-      <style>
-    .hero-bg {
-      background-image: url('<?= base_url('images/bg-about.jpg') ?>');
-    }
-  </style>
+    <style>
+        .hero-bg {
+            background-image: url('<?= base_url('images/bg-about.jpg') ?>');
+        }
+    </style>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="container">
-           <a class="navbar-brand" href="<?= base_url() ?>">N4S</a>
+            <a class="navbar-brand" href="<?= base_url() ?>">N4S</a>
             <button class="navbar-toggler">
                 <i class="fas fa-bars"></i>
             </button>
@@ -29,14 +31,14 @@
         </div>
     </nav>
 
-   <header class="hero-section">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Tentang Saya</h1>
-      <p>Mengenal lebih dekat dengan tim kami</p>
-    </div>
-  </header>
+    <header class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Tentang Saya</h1>
+            <p>Mengenal lebih dekat dengan tim kami</p>
+        </div>
+    </header>
 
     <main class="container">
         <div class="card-grid">
@@ -53,7 +55,7 @@
                     <i class="fas fa-cogs"></i>
                 </div>
                 <h3>Bisa Apa Aku</h3>
-                <p>Saya menguasai berbagai teknologi web modern termasuk PHP, JavaScript, CSS, dan berbagai framework terkini untuk pengembangan aplikasi web.</p>
+                <p>Sayas menguasai berbagai teknologi web modern termasuk PHP, JavaScript, CSS, dan berbagai framework terkini untuk pengembangan aplikasi web.</p>
             </article>
 
             <article class="card">
@@ -80,4 +82,5 @@
 
     <script src="<?= base_url('js1/blog-detail.js') ?>"></script>
 </body>
+
 </html>
