@@ -430,3 +430,40 @@ body {
 }
 
 /* foto */
+/* Chatbot Center Button */
+.chatbot-center-btn {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.chatbot-center-btn .chatbot-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.chatbot-center-btn .chatbot-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(67, 97, 238, 0.4);
+}
+
+.chatbot-center-btn .chatbot-link i {
+    font-size: 1.3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .chatbot-center-btn .chatbot-link {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}

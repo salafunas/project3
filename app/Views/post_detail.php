@@ -47,7 +47,7 @@
     </div>
   </footer>
 
-  <script src="<?= base_url('js1/blog-detail.js') ?>"></script>
+  <script src="<?= base_url('js/blog-detail.js') ?>"></script>
   <!-- Optional Font Awesome for icons -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 </body>

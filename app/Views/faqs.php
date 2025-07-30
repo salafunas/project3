@@ -70,6 +70,19 @@
             </article>
         </div>
     </main>
+<main class="container">
+    <div class="card-grid">
+        <!-- Card FAQ yang sudah ada... -->
+    </div>
+
+    <!-- Chatbot Button in Center -->
+    <div class="chatbot-center-btn">
+        <a href="<?= base_url('chatbot') ?>" class="chatbot-link">
+            <i class="fas fa-robot"></i>
+            <span>Tanya AI Assistant</span>
+        </a>
+    </div>
+</main>
 
     <footer class="footer">
         <div class="container">

@@ -14,6 +14,8 @@ $routes->get('/post', 'Post::index');
 $routes->get('/post/(:any)', 'Post::viewPost/$1');
 $routes->get('/post', 'Post::index');
 $routes->get('/post/(:any)', 'Post::viewPost/$1');
+// app/Config/Routes.php
+$routes->get('chatbot', 'Chatbot::index');
 // admin Post
 $routes->group('admin', function($routes){
     $routes->get('post', 'PostAdmin::index', ['filter' => 'login']);
