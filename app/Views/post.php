@@ -2,76 +2,75 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MyBlog</title>
-
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="<?= base_url('css/bootstrap.min.css') ?>" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N4S - Blog</title>
+  <link rel="stylesheet" href="<?= base_url('css1/style.css') ?>">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .hero-bg {
+      background-image: url('<?= base_url('images/bg-blog.png') ?>');
+    }
+  </style>
 </head>
 
 <body>
+  <nav class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="<?= base_url() ?>">N4S</a>
+      <button class="navbar-toggler">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="<?= base_url() ?>"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="<?= base_url('about') ?>"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a href="<?= base_url('post') ?>" class="active"><i class="fas fa-blog"></i> Blog</a></li>
+        <li><a href="<?= base_url('kontak') ?>"><i class="fas fa-envelope"></i> Kontak</a></li>
+        <li><a href="<?= base_url('faqs') ?>"><i class="fas fa-question-circle"></i> FAQ</a></li>
+        <li><a href="<?= base_url('admin/post') ?>"><i class="fas fa-paper-plane"></i>mau post blog?</a></li>
 
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-		<div class="container">
-			<a class="navbar-brand" href="<?= base_url() ?>">MyBlog</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="<?= base_url() ?>">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="<?= base_url('about') ?>">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="<?= base_url('post') ?>">Blog</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="<?= base_url('contact') ?>">Contact</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="<?= base_url('faqs') ?>">FAQ</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
 
-	<div class="p-5 mb-4 bg-light rounded-3">
-      <div class="container py-5">
-        <h1 class="display-5 fw-bold">Blog</h1>
-        <!-- <p class="col-md-8 fs-4">di laman portal berita</p> -->
-        <!-- <button class="btn btn-primary btn-sm" type="button">Read more</button> -->
-      </div>
+      </ul>
     </div>
+  </nav>
 
-	<div class="container">
-		<div class="row">
-			<?php foreach ($posts as $post) : ?>
-				<div class="col-md-12 my-2 card">
-					<div class="card-body">
-						<h5 class="h5"><a href="/post/<?= $post['slug'] ?>"><?= $post['title'] ?></a></h5>
-						<p><?= substr($post['content'], 0, 120) ?></p>
-					</div>
-				</div>
-			<?php endforeach ?>
-		</div>
-	</div>
-	<div class="container py-4">
-		<footer class="pt-3 mt-4 text-muted border-top">
-			<div class="container">
-				&copy; <?= Date('Y') ?>
-			</div>
-		</footer>
-	</div>
+  <header class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Blog Saya</h1>
+      <p>Artikel terbaru seputar pengembangan web</p>
+    </div>
+  </header>
 
-	<!-- Jquery dan Bootsrap JS -->
-	<script src="<?= base_url('js/jquery.min.js') ?>"></script>
-	<script src="<?= base_url('js/bootstrap.min.js') ?>"></script>
+  <main class="container">
+    <div class="card-grid">
+      <?php foreach ($posts as $post) : ?>
+        <article class="card">
+          <div class="card-icon">
+            <i class="fas fa-newspaper"></i>
+          </div>
+          <h3><a href="/post/<?= $post['slug'] ?>"><?= $post['title'] ?></a></h3>
+          <p><?= substr($post['content'], 0, 120) ?>...</p>
+          <a href="/post/<?= $post['slug'] ?>" class="btn btn-outline">Baca Selengkapnya</a>
+        </article>
+      <?php endforeach ?>
+    </div>
+  </main>
 
+  <footer class="footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/salafunas-saleh-103906375/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a href="https://x.com/Salafunas_" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/salafunas_" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/salafunas" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+      </div>
+      <p>&copy; <?= date('Y') ?> N4S. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="<?= base_url('js/blog-detail.js') ?>"></script>
 </body>
 
 </html>
